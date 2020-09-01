@@ -1,31 +1,35 @@
 /* noto-sans-jp-regular - japanese_latin */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
-       url('../fonts/noto-sans-jp-v25-japanese_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/noto-sans-jp-v25-japanese_latin-regular.woff') format('woff'); /* Modern Browsers */
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("../fonts/noto-sans-jp-v25-japanese_latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/noto-sans-jp-v25-japanese_latin-regular.woff")
+      format("woff"); /* Modern Browsers */
 }
 
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin-regular.woff")
+      format("woff"); /* Modern Browsers */
 }
 
 html {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   color: #42464c;
   background: 0 0;
@@ -39,7 +43,7 @@ a {
 }
 
 .error-text {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -120,13 +124,18 @@ a {
   font-size: 35px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto', Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 800;
   color: #111111;
 }
 
-.container[role=main] {
+.container[role="main"] {
   max-width: 700px;
   padding: 0 15px;
   font-size: 16px;
@@ -155,17 +164,17 @@ h1,h2,h3,h4,h5,h6 {
 #TableOfContents {
   font-size: 14px;
   border: 2px dotted #cccccc;
-  margin: 1em 0;
-  padding: 0.5em 0;
+  margin: 0 0;
+  padding: 0.25em 0;
   background-color: #f0f0f0;
 }
 
-#TableOfContents ul { 
-  list-style-type: none; 
+#TableOfContents ul {
+  list-style-type: none;
 }
 
-#TableOfContents ul ul { 
-  list-style-type: disc; 
+#TableOfContents ul ul {
+  list-style-type: disc;
 }
 
 p {
@@ -196,14 +205,14 @@ p + p {
 }
 
 .blog-tags {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #999999;
   font-size: 15px;
   margin: 30px 0;
 }
 
 .blog-tags a {
-  color: #0000BB;
+  color: #0000bb;
   text-decoration: none;
   padding: 0px 5px;
 }
@@ -213,11 +222,11 @@ p + p {
 }
 
 h4.term-name > span.badge {
-    float: right;
+  float: right;
 }
 
 div.panel-body {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 800;
   border-radius: 0;
   border: none;
@@ -230,7 +239,7 @@ div.panel-body {
 }
 
 .post-read-more {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 800;
   float: right;
   position: relative;
@@ -242,13 +251,13 @@ a.post-read-more::after {
   position: absolute;
   bottom: -4px;
   left: 0;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background: #333;
   transform: scale(0, 1);
   transform-origin: center top;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 a.post-read-more:hover::after {
@@ -309,35 +318,35 @@ table tr td :last-child {
 }
 
 pre {
-    display: block;
-    padding: 9.5px;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.42857143;
-    color: #333;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: #f5f5f5;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
 }
 
 pre code {
-    padding: 0;
-    font-family: Menlo, Monaco, Consolas, monospace;
-    font-size: inherit;
-    color: inherit;
-    white-space: pre-wrap;
-    background-color: transparent;
-    border-radius: 0;
+  padding: 0;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #dd0011;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #dd0011;
+  background-color: #f9f9f9;
+  border-radius: 4px;
 }
 
 #backtotopButton {
@@ -378,7 +387,7 @@ input.searchBox {
   outline: 0;
   font-size: 16px;
   color: #707070;
-  background-color:#f6f6f6;
+  background-color: #f6f6f6;
   border: solid 1px #c9c9c9;
   box-sizing: border-box;
 }
@@ -401,11 +410,11 @@ input.searchBox {
 }
 
 .searchResultPage {
-  padding: 14px
+  padding: 14px;
 }
 
 .searchResultTitle {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin: 5px 0;
@@ -422,7 +431,7 @@ mark {
 .pager {
   list-style: none;
   text-align: center;
-  margin:20px 0 0;
+  margin: 20px 0 0;
   padding-left: 0;
 }
 
@@ -436,7 +445,7 @@ mark {
 
 .pager li a {
   box-sizing: border-box;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -470,11 +479,11 @@ footer {
   text-align: center;
   margin-top: auto;
   font-size: 14px;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
 footer .copyright {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 0;
 }
@@ -506,7 +515,7 @@ footer i {
     margin: 0 0 0 30px;
   }
 
-  .container[role=main] {
+  .container[role="main"] {
     font-size: 16px;
     line-height: 1.8;
     margin: 40px auto;
@@ -520,7 +529,20 @@ footer i {
     padding: 10px 20px;
   }
 
-  .pager.blog-pager  {
+  .pager.blog-pager {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .sticky {
+    width: 350px;
+    position: sticky;
+    z-index: 1;
+    top: 8vh;
+    overflow-x: hidden;
+    height: 70vh;
+    overflow-y: auto;
+    float: right;
   }
 }
